@@ -36,7 +36,7 @@ window.addEventListener("scroll", function (e) {
   } else {
     navbar.classList.remove("scroll-nav");
   }
-  this.oldScroll = this.scrollY - 2;
+  this.oldScroll = this.scrollY;
 });
 
 // //  ------------nav bar end-------------
