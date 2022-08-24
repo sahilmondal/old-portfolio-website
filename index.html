@@ -256,7 +256,7 @@
 
         <button class="btn cv-btn">
           <a href="assets/resume.pdf" download="Resume Of Sahil mondal"
-            >Download CV</a
+            ><i class="fa-solid fa-download"></i>Resume</a
           >
         </button>
       </p>
@@ -344,12 +344,86 @@
     <!-- ----------------------contacts------------------ -->
     <section id="contacts">
       <img class="heading-img" src="assets/contact.svg" alt="about-img" />
-
       <h1 class="page-title contact-title"><span> <</span>Contacts></h1>
+      <p class="subtext">
+        Feel free to Contact me by submitting the form below and I will get back
+        to you as soon as possible
+      </p>
+
+      <!-- ........form....  -->
+
+      <div class="form_container">
+        <form action="#" class="contact-form" method="POST">
+          <div class="form-input">
+            <label for="name" class="label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+              class="contact__form-input"
+            />
+          </div>
+          <div class="form-input">
+            <label for="email" class="label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+              class="contact__form-input"
+            />
+          </div>
+          <div class="form-input">
+            <label for="number" class="label">Phone Number</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Enter Your Number"
+              class="contact__form-input"
+            />
+          </div>
+          <div class="form-input">
+            <label for="text-area" class="label">Messege</label>
+            <textarea
+              required=""
+              cols="30"
+              rows="10"
+              class="contact__form-input"
+              placeholder="Enter Your Message"
+              name="message"
+              id="message"
+              spellcheck="false"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="wrap">
+        <div class="contact-info">
+          <p class="info-text"><i class="fa-solid fa-phone"></i>9831737396</p>
+        </div>
+        <div class="contact-info">
+          <p class="info-text">
+            <a href="mailto:work.sahilmondal@outlook.com"
+              ><i class="fa-solid fa-paper-plane"></i
+              >work.sahilmondal@outlook.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info">
+          <p class="info-text">West Bengal,India</p>
+        </div>
+      </div>
     </section>
-    <!-- <footer>
-      <a href="https://www.flaticon.com/free-icons/e" title="e icons">Icons</a>
-    </footer> -->
+    <footer>
+      <p class="subtext footer-copyright">
+        © Copyright 2022. Made with 💗 by Sahil Mondal.
+      </p>
+    </footer>
 
     <!-- own js  -->
     <script src="main.js"></script>

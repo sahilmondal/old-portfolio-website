@@ -46,7 +46,6 @@ body {
   overflow-x: hidden;
   font-family: "Merriweather", serif;
   color: var(--head-line);
-  cursor: none;
 }
 .cursor {
   width: 40px;
@@ -60,6 +59,7 @@ body {
   animation: cursor 0.9s linear infinite;
   pointer-events: none;
   z-index: -4;
+  display: none;
 }
 @keyframes cursor {
   0% {
@@ -95,6 +95,7 @@ body {
   pointer-events: none;
   transition: 0.05s top ease, 0.05s left ease;
   z-index: 999;
+  display: none;
 }
 
 /* utility classes  */
@@ -129,6 +130,7 @@ a {
   z-index: 1;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 .logo-container {
   width: 100%;
   display: flex;
@@ -271,6 +273,7 @@ a {
   position: absolute;
   bottom: -8%;
   left: -4%;
+  filter: drop-shadow(20px 30px 5px rgba(48, 48, 48, 0.298));
 }
 
 /* header text  */
@@ -376,6 +379,10 @@ section {
 }
 .cv-btn{
   margin: var(--margin-top-bottom);
+  padding: 10px 30px;
+}
+.cv-btn a i{
+ padding: 0 10px 0 0;
 }
 /* ------------skills---------- */
 #skills{
@@ -443,4 +450,79 @@ section {
 
 #contacts{
   background: var(--bg-contact);
+  margin-bottom: 0;
+}
+
+
+.form_container{
+  background-color: var(--bg-color);
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+  border-radius: 5px;
+  padding: 20px ;
+  margin-top: 2rem;
+}
+.contact-form{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+.label{
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.contact__form-input{
+width: 100%;
+padding: 1rem 10px;
+border: none;
+background-color:rgba(255, 255, 255, 0.704);
+border: 1px solid #ebebeb;
+border-radius: 5px;
+font-weight: 600;
+color: var(--sec-title-color);
+font-family: "ubuntu", san-serif;
+font-size: medium;
+}
+
+.form-input{
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.contact-form .btn{
+  width: 80%;
+  margin-top: 2rem;
+}
+/* -----form end----  */
+.wrap{
+  padding-top: 20px;
+}
+.contact-info{
+  text-align: left;
+  margin-top: 10px;
+}
+.contact-info i {
+  font-size: 1rem;
+  padding: 0 10px 0 0;
+}
+.info-text{
+  font-weight: 600;
+  font-family: "ubuntu", san-serif;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+
+/* ----------------contact-form----------------  */
+
+/* -------------footer--------------- */
+footer{
+  padding: 1rem;
+  margin: 0;
+}
+
+.footer-copyright{
+  text-align: center;
+  font-size: .8rem;
+  padding-bottom: 0;
 }
