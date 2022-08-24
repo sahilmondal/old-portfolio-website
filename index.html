@@ -353,7 +353,12 @@
       <!-- ........form....  -->
 
       <div class="form_container">
-        <form action="#" class="contact-form" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="fac031b1-8b01-4e70-986c-0ce0c24a1e8e"
+          />
           <div class="form-input">
             <label for="name" class="label">Name</label>
             <input
@@ -399,8 +404,14 @@
               spellcheck="false"
             ></textarea>
           </div>
+          <input
+            type="hidden"
+            name="redirect"
+            value="http://sahilmondal.github.io/success.html"
+          />
           <button type="submit" class="btn">Submit</button>
         </form>
+        <!-- form end ------------------  -->
       </div>
       <div class="wrap">
         <div class="contact-info">
