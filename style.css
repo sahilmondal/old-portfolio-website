@@ -120,7 +120,7 @@ a {
 #home {
   padding-bottom: 50px;
 }
-/*/// ------------navbar-----------  */
+       /* --navbar---  */
 
 .scroll-nav {
   position: fixed;
@@ -168,7 +168,7 @@ a {
   z-index: 2;
   transform: scale(0);
   display: none;
-  transition: scale 1.5s ease-in-out;
+  transition: scale 1.5s ease;
 }
 .animation1 {
   opacity: 0.9;
@@ -187,10 +187,9 @@ a {
   position: absolute;
   top: -100vh;
   z-index: 3;
-  transition: top 0.4s ease-out;
+  transition: top 0.4s ease;
 }
 .animation2 {
-  transition: top 0.4s ease-out;
   top: 0;
 }
 .navbar ul li {
