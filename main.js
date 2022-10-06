@@ -24,17 +24,5 @@ function closeMenu() {
     hamburger.classList.remove("is-active");
   }
 }
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", function (e) {
-  if (this.oldScroll > this.scrollY && this.oldScroll > 600) {
-    console.log(this.scrollY);
-    console.log(this.oldScroll > this.scrollY);
-    navbar.classList.add("scroll-nav");
-  } else {
-    navbar.classList.remove("scroll-nav");
-  }
-  this.oldScroll = this.scrollY;
-});
 
 // //  ------------nav bar end-------------
