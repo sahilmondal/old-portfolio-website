@@ -10,22 +10,19 @@ document.addEventListener("mousemove", (e) => {
 });
 //  ------------nav bar -------------
 
-const blur = document.querySelector(".blur");
-const nav = document.querySelector(".nav-items");
-const nav_item = document.querySelectorAll(".nav-item");
+const toggle_menu = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const hamburger = document.querySelector("#hamburger_menu");
 
-function openMenu() {
-  blur.classList.add("animation1");
-  nav.classList.add("animation2");
+function toggle_nav() {
+  menu.classList.toggle("active");
+  hamburger.classList.toggle("is-active");
 }
-
 function closeMenu() {
-  if (blur.classList.contains("animation1")) {
-    blur.classList.remove("animation1");
-    nav.classList.remove("animation2");
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
   }
 }
-
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", function (e) {
