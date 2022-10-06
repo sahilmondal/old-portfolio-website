@@ -140,7 +140,7 @@ a {
   left: 7px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: 25px;
   padding-bottom: 10px;
   border-radius: 5px;
 }
@@ -561,7 +561,9 @@ font-size: medium;
   font-size: 1rem;
   padding-left: 20px;
 }
-
+#contacts .btn{
+  width: 80%;
+}
 
 /* ----------------contact-form----------------  */
 
@@ -575,4 +577,45 @@ footer{
   text-align: center;
   font-size: .8rem;
   padding-bottom: 0;
+}
+
+/* ================responsive-ness =================  */
+
+@media screen and (min-width: 768px){
+  section{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1.2rem;
+  }
+  #skills,
+  .work,
+  .flex-heading,
+  #contacts,
+  #about .subtext{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.header-text p,
+.work,
+#contacts{
+width: 70vw;
+}
+  /* --------about section--------  */
+  #skills,
+  #about .subtext{
+    width: 60vw;
+  }
+  .skills{
+    padding: 0.6rem 1.1rem;
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+  /* ------about end-------  */
+/* ----work----- */
+  .flex-heading::after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
