@@ -21,6 +21,7 @@ function toggle_nav() {
 function closeMenu() {
   if (menu.classList.contains("active")) {
     menu.classList.remove("active");
+    hamburger.classList.remove("is-active");
   }
 }
 const navbar = document.querySelector(".navbar");
