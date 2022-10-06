@@ -50,56 +50,6 @@ body {
   font-family: "Merriweather", serif;
   color: var(--head-line);
 }
-.cursor {
-  width: 40px;
-  height: 40px;
-  background-color: var(--cursor-2);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  top: -20px;
-  transition: 0.1s top linear, 0.1s left linear;
-  animation: cursor 0.9s linear infinite;
-  pointer-events: none;
-  z-index: -4;
-  display: none;
-}
-@keyframes cursor {
-  0% {
-    width: 20px;
-    height: 20px;
-  }
-  30% {
-    width: 30px;
-    height: 30px;
-  }
-  50% {
-    width: 40px;
-    height: 40px;
-  }
-  70% {
-    width: 30px;
-    height: 30px;
-  }
-  100% {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.center-cursor {
-  width: 20px;
-  height: 20px;
-  background-color: var(--cursor);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  top: -20px;
-  pointer-events: none;
-  transition: 0.05s top ease, 0.05s left ease;
-  z-index: 999;
-  display: none;
-}
 
 /* utility classes  */
 p {
@@ -139,6 +89,7 @@ a {
   height: 100%;
   width: 40px;
   padding: 0;
+  cursor: none;
 }
 .toggle {
   position: relative;
@@ -496,7 +447,6 @@ section {
   box-shadow: rgb(100 100 111 / 40%) 0 7px 29px 0;
   border-radius: 5px;
   padding: 20px;
-  margin: 2rem;
 }
 .contact-form {
   margin: 0;
@@ -611,6 +561,55 @@ footer {
 @media screen and (min-width: 1024px) {
   body {
     padding: var(--body-padding);
+    cursor: none;
+  }
+  .cursor {
+    width: 40px;
+    height: 40px;
+    background-color: var(--cursor-2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    top: -20px;
+    transition: 0.1s linear;
+    animation: cursor 0.9s linear infinite;
+    pointer-events: none;
+    z-index: -4;
+  }
+  @keyframes cursor {
+    0% {
+      width: 20px;
+      height: 20px;
+    }
+    30% {
+      width: 30px;
+      height: 30px;
+    }
+    50% {
+      width: 40px;
+      height: 40px;
+    }
+    70% {
+      width: 30px;
+      height: 30px;
+    }
+    100% {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .center-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: var(--cursor);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    top: -20px;
+    pointer-events: none;
+    transition: 0.05s ease;
+    z-index: 999;
   }
   section {
     padding: 0;
@@ -629,6 +628,7 @@ footer {
   .navbar {
     margin: 0;
     padding: 0;
+    background: none;
   }
   .menu {
     margin: 0;
@@ -657,6 +657,7 @@ footer {
     font-family: "ubuntu", serif;
     font-size: var(--font-xs);
     color: var(--sec-title-color);
+    cursor: none;
   }
   /* -------nav end-------- */
 
