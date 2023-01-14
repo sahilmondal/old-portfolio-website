@@ -251,22 +251,86 @@ ul li a:hover::before {
   position: relative;
   margin: 0 auto;
 }
+
 .fancyBorder {
-  /* z-index: 0; */
-  width: 80%;
-  height: 80%;
-  background-image: linear-gradient(90deg, #f7c9c9, #fa709a 70%);
-  border-radius: 69% 31% 53% 47% / 52% 29% 71% 48%;
+  width: 85%;
+  height: 85%;
   position: absolute;
   bottom: 4%;
   left: 10%;
+  z-index: 0;
+  transition: all 0.1s ease-in-out;
 }
+.fancyBorder-1 {
+  animation: border-anim1 5s linear infinite;
+  border-radius: 90% 10% 91% 9% / 93% 0% 100% 7%;
+  background-color: #fa709a;
+}
+
+@keyframes border-anim1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* @keyframes border-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+.fancyBorder-2 {
+  animation: border-anim2 4s linear infinite;
+  border-radius: 67% 33% 49% 51% / 79% 53% 47% 21%;
+  background-image: linear-gradient(90deg, #f7c9c9, #fa709a 30%);
+  width: 85%;
+  height: 85%;
+  z-index: 1;
+}
+
+@keyframes border-anim2 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.fancyBorder-3 {
+  animation: border-anim3 6s linear infinite;
+  background-image: linear-gradient(90deg, #f7c9c9, #fa709a 70%);
+  border-radius: 72% 28% 36% 64% / 71% 61% 39% 29%;
+  z-index: 2;
+  width: 80%;
+  height: 80%;
+}
+
+@keyframes border-anim3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ........................  */
 .profile-pic {
   height: 100%;
   position: absolute;
   bottom: -8%;
   left: -4%;
   filter: drop-shadow(20px 30px 5px rgba(48, 48, 48, 0.298));
+  z-index: 5;
+  pointer-events: none;
 }
 
 /* header text  */
