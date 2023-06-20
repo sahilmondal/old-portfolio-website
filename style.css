@@ -414,6 +414,7 @@ section {
   font-size: var(--font-small);
   color: var(--link-color);
   text-align: left;
+  display:inline;
 }
 .heading-img {
   width: 10rem;
