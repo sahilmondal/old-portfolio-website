@@ -1,6 +1,6 @@
 # Old Portfolio Website
 
-![Portfolio Website Screenshot](/screenshot.png)
+![Portfolio Website Screenshot](/Screenshot.png)
 
 ## Introduction
 
